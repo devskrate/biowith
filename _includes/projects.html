@@ -1,6 +1,7 @@
 <!-- Page Content -->
 <section id="{{ page.section-type }}" class="container content-section text-center">
-  
+    {{ page.content | markdownify }}
+    
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
         <div class="card h-100">
