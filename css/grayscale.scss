@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 39px;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -281,7 +281,6 @@ ul{
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        border: 1px solid $font-color;
     }
     /* Added in { Personal } */
     ul,
@@ -587,3 +586,35 @@ body {
     }
   }
   
+.project-link {
+    font-size: 18px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin:10px 0;
+	padding:6px;
+	color:#000;
+    background-color: $secondary-color;
+	border-radius: 8px;
+	text-align:center;
+	outline:0;
+	text-decoration:none;
+	transition:color .3s ease-out,
+	background-color .3s ease-out,
+}
+.project-link:active,
+.project-link:hover {
+	background-color:#000;
+	color: $secondary-color;
+	transition:color .3s ease-in,
+	background-color .3s ease-in,
+}
+
+#project-title{
+    margin-top: 20px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+#project-desc{
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
