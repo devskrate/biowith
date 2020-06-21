@@ -154,6 +154,28 @@ events:
     date: "September 2007 - August 2013"
     description: "Saving the neighborhood!"
 
+projects:
+  - image: "/img/projects/project.png"
+    title: "Project 1"
+    description: "Here at DevsKrate we inspire and endeavor to share about technology like Softwares, Coding, etc., and provide our best about HOW TO tutorials and BEST OF every category in accordance to our knowledge."
+    source_link: "https://devskrate.com/"
+    demo_link: "https://devskrate.com/"
+  - image: "/img/projects/project.png"
+    title: "Project 2"
+    description: "Here at DevsKrate we inspire and endeavor to share about technology like Softwares, Coding, etc., and provide our best about HOW TO tutorials and BEST OF every category in accordance to our knowledge."
+    source_link: "https://devskrate.com/"
+    demo_link: "https://devskrate.com/"
+  - image: "/img/projects/project.png"
+    title: "Project 3"
+    description: "Here at DevsKrate we inspire and endeavor to share about technology like Softwares, Coding, etc., and provide our best about HOW TO tutorials and BEST OF every category in accordance to our knowledge."
+    source_link: "https://devskrate.com/"
+    demo_link: ""
+  - image: "/img/projects/project.png"
+    title: "Project 4"
+    description: "Here at DevsKrate we inspire and endeavor to share about technology like Softwares, Coding, etc., and provide our best about HOW TO tutorials and BEST OF every category in accordance to our knowledge."
+    source_link: "https://devskrate.com/"
+    demo_link: ""
+
 # First image of the Timeline
 
 timeline-img: "/img/timeline/default.png"
