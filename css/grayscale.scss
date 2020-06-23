@@ -618,3 +618,33 @@ body {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
 }
+
+.tech {
+	margin: 0 auto;
+}
+.user {
+	text-align:center;
+	font-size:60px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.user p{
+    display:inline;
+}
+.br { 
+    display: block; 
+    margin-bottom: -50px; 
+} 
+@media only screen and (min-width: 768px) {
+	.tech {
+		margin:10px
+	}
+	.user {
+		flex-wrap:nowrap;
+		font-size:75px
+	}
+	
+}
