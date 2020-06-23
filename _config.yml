@@ -196,8 +196,13 @@ education:
     course: "Bachelor of Technology"
     branch: "Computer Science"
     score: "8.85"
-  
 
+
+Technical: [Python, Java, HTML, CSS, JS]
+
+Familiar_With: [react.js, vue.js, flask, django]
+
+Non_Technical: [Cricket, Photography, Chess, Painting]
 
 ###########
 # Contact #
@@ -263,6 +268,7 @@ pages_list:
   #Blog: 'latest-post'
   Education: 'education'
   Experience: 'timeline'
+  Skills: 'skills'
   Projects: 'projects'
   Contact: 'contact'
 
