@@ -1,0 +1,58 @@
+<!-- Skills Start -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<section id="{{ page.section-type }}" class="container content-section text-center">
+    <div class="row">
+        {{ page.content | markdownify }}
+        <div class="user">
+            <div class="tech">
+                <h3>Technical</h3>
+                <i class="fab fa-python fa-fw"></i>
+                <i class="fab fa-java fa-fw"></i>
+                <i class="fab fa-html5 fa-fw"></i>
+                <br>
+                {% assign count = 0 %}
+                {% for skill in site.Technical %}
+
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+
+            <div class="tech" >
+                <h3>Familiar With</h3>
+                <i class="fab fa-android fa-fw"></i>
+                <i class="fab fa-react fa-fw"></i>
+                <br>
+                {% assign count = 0 %}
+                {% for skill in site.Familiar_With %}
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+
+            <div class="tech">
+                <h3>Non-Technical</h3>
+                <i class="fas fa-chess fa-fw"></i>
+                <i class="fas fa-camera fa-fw"></i>
+                <br>
+                {% assign count = 0 %}
+                {% for skill in site.Non_Technical %}
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>  
