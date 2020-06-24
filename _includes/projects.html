@@ -8,11 +8,11 @@
           <div class="card h-100">
             <img class="card-img-top img-responsive" src="{{ site.baseurl }}{{ project.image }}" alt="">
             <div class="card-body">
-              <h2 class="card-title" id="project-title">{{ project.title }}</h2>
+              <a target="_blank" href="{{ project.source_link }}"><h2 class="card-title" id="project-title">{{ project.title }}</h2></a>
               <p class="card-text" id="project-desc">{{ project.description }}</p>
-              <a class="project-link" target="_blank" href="{{ project.source_link }}">Source Code<i class="fa fa-code fa-fw"></i></a><br><br>
+              <a class="project-link" id="code-link" target="_blank" href="{{ project.source_link }}">Code <i class="fa fa-code fa-fw"></i></a>
               {% if project.demo_link != "" %}
-              <a class="project-link" target="_blank" href="{{ project.demo_link }}">demo</a>
+              <a class="project-link" id="demo-link" target="_blank" href="{{ project.demo_link }}">demo</a>
               {% endif %}
             </div><br><br>
           </div>

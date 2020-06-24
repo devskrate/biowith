@@ -589,12 +589,13 @@ body {
 .project-link {
     font-size: 18px;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin:10px 0;
+    margin-right: 10px;
 	padding:6px;
 	color:#000;
     background-color: $secondary-color;
 	border-radius: 8px;
-	text-align:center;
+    text-align:center;
+    display: inline;
 	outline:0;
 	text-decoration:none;
 	transition:color .3s ease-out,
@@ -619,6 +620,7 @@ body {
     font-size: 18px;
 }
 
+
 .tech {
 	margin: 0 auto;
 }
@@ -633,6 +635,7 @@ body {
 
 .user p{
     display:inline;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .br { 
     display: block; 
