@@ -4,11 +4,11 @@
         {{ page.content | markdownify }}
         <div class="user">
             <div class="tech">
-                <h3>Technical</h3>
+                <h3 id="skill-category">Technical</h3>
                 <i class="devicon-python-plain-wordmark colored"></i>
                 <i class="devicon-java-plain-wordmark colored"></i>
                 <i class="devicon-html5-plain-wordmark colored"></i>
-                <br>
+                <span class="br1"></span>
                 {% assign count = 0 %}
                 {% for skill in site.Technical %}
 
@@ -22,10 +22,10 @@
             </div>
 
             <div class="tech" >
-                <h3>Familiar With</h3>
+                <h3 id="skill-category">Familiar With</h3>
                 <i class="devicon-android-plain-wordmark colored"></i>
                 <i class="devicon-react-original-wordmark colored"></i>
-                <br>
+                <span class="br1"></span>
                 {% assign count = 0 %}
                 {% for skill in site.Familiar_With %}
                 <p>{{skill}}</p>
@@ -38,10 +38,10 @@
             </div>
 
             <div class="tech">
-                <h3>Non-Technical</h3>
+                <h3 id="skill-category">Non-Technical</h3>
                 <i class="fa fa-camera fa-fw"></i>
                 <i class="fa fa-paint-brush fa-fw" style="color: #00cdff;"></i>
-                <br>
+                <span class="br1"></span>
                 {% assign count = 0 %}
                 {% for skill in site.Non_Technical %}
                 <p>{{skill}}</p>

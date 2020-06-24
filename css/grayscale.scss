@@ -636,11 +636,20 @@ body {
 .user p{
     display:inline;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
 }
 .br { 
     display: block; 
     margin-bottom: -50px; 
 } 
+.br1 { 
+    display: block; 
+    margin-bottom: -30px; 
+} 
+
+#skill-category{
+    margin-top: 20px;
+}
 @media only screen and (min-width: 768px) {
 	.tech {
 		margin:10px
@@ -648,6 +657,5 @@ body {
 	.user {
 		flex-wrap:nowrap;
 		font-size:75px
-	}
-	
+    }	
 }
