@@ -1,0 +1,57 @@
+<!-- Skills Start -->
+<section id="{{ page.section-type }}" class="container content-section text-center">
+    <div class="row">
+        {{ page.content | markdownify }}
+        <div class="user">
+            <div class="tech">
+                <h3 id="skill-category">Technical</h3>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <span class="br1"></span>
+                {% assign count = 0 %}
+                {% for skill in site.Technical %}
+
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+
+            <div class="tech" >
+                <h3 id="skill-category">Familiar With</h3>
+                <i class="devicon-android-plain-wordmark colored"></i>
+                <i class="devicon-react-original-wordmark colored"></i>
+                <span class="br1"></span>
+                {% assign count = 0 %}
+                {% for skill in site.Familiar_With %}
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+
+            <div class="tech">
+                <h3 id="skill-category">Non-Technical</h3>
+                <i class="fa fa-camera fa-fw"></i>
+                <i class="fa fa-paint-brush fa-fw" style="color: #00cdff;"></i>
+                <span class="br1"></span>
+                {% assign count = 0 %}
+                {% for skill in site.Non_Technical %}
+                <p>{{skill}}</p>
+                {% assign count = count | plus:1 %}
+                {% assign count = count | modulo:3 %}
+                {% if count == 0 %}
+                <span class="br"></span>
+                {% endif%}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>  
