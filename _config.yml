@@ -204,6 +204,8 @@ Familiar_With: [react.js, vue.js, flask, django]
 
 Non_Technical: [Cricket, Photography, Chess, Painting]
 
+resume: resume_path
+
 ###########
 # Contact #
 ###########
@@ -267,6 +269,7 @@ pages_list:
   About: 'about'
   #Blog: 'latest-post'
   Education: 'education'
+  Resume: 'about'
   Experience: 'timeline'
   Skills: 'skills'
   Projects: 'projects'
