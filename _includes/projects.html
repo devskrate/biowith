@@ -10,9 +10,9 @@
             <div class="card-body">
               <a target="_blank" href="{{ project.source_link }}"><h2 class="card-title" id="project-title">{{ project.title }}</h2></a>
               <p class="card-text" id="project-desc">{{ project.description }}</p>
-              <a class="project-link" id="code-link" target="_blank" href="{{ project.source_link }}">Code <i class="fa fa-code fa-fw"></i></a>
+              <a class="project-link" id="code-link" target="_blank" href="{{ project.source_link }}"><i class="fa fa-code fa-fw"> </i>Code </i></a>
               {% if project.demo_link != "" %}
-              <a class="project-link" id="demo-link" target="_blank" href="{{ project.demo_link }}">demo</a>
+              <a class="project-link" id="demo-link" target="_blank" href="{{ project.demo_link }}"><i class="fa fa-info-circle fa-fw"></i>demo</a>
               {% endif %}
             </div><br><br>
           </div>
