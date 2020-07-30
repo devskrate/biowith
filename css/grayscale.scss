@@ -29,10 +29,18 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 39px;
+    margin: 0 0 45px;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+@media(min-width:768px) {
+
+    h2{
+        margin: 0 0 60px;
+    }
+
 }
 
 /* Added in { Personal } */
@@ -47,12 +55,12 @@ h4 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 65px;
     font-size: 18px;
     line-height: 1.5;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     @media(min-width:768px) {
-        margin: 0 0 35px;
+        margin: 0 0 55px;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -125,17 +133,20 @@ a {
                     /* color: rgba($font-color, 0.8); */
                     outline: none;
                     background-color: rgba($font-color, 0.3);
+                    color: $secondary-color
                 }
                 &:focus,
                 &:active {
                     outline: none;
                       background-color: rgba($font-color, 0.3);
+                      
                 }
             }
             &.active {
                 outline: none;
                 a {
                     background-color: rgba($font-color, 0.3);
+                    color: $secondary-color;
                     &:hover {
                         color: $navbar-color;
                     }
@@ -273,10 +284,10 @@ ul{
 }
 
 .content-section {
-    margin-top: 100px;
-    padding-top: 100px;
+    
+    padding-top: 25%;
     @media(min-width:767px) {
-        margin-top: 125px;
+        margin-top: 135px;
         padding-top: 125px;
     }
     /* Added in { Personal } for responsive images in posts and section contents */
@@ -666,7 +677,8 @@ body {
 #project-title{
     margin-top: 20px;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 27px;
 }
 
 #project-desc{
@@ -681,7 +693,7 @@ body {
 .user {
 	text-align:center;
 	font-size:60px;
-	display:flex;
+	//display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:space-between;
@@ -706,10 +718,16 @@ body {
 }
 @media only screen and (min-width: 768px) {
 	.tech {
-		margin:10px
+		margin:10px;
 	}
 	.user {
 		flex-wrap:nowrap;
-		font-size:75px
+        font-size:75px;
+        display: flex;
     }	
+}
+
+.timeline-body p{
+    font-size: 20px;
+    margin-top: 5px;
 }
