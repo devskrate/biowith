@@ -27,6 +27,20 @@
         color: white;
         background-color: black;
     }
+
+    #footer-text{
+
+        font-size: 15px;
+        margin-top: 5px;
+
+    }
+
+    @media(min-width:768px) {
+
+        #footer-text{
+            font-size: 17px;
+        }
+    }
 </style>
 <footer>
     <a href="#page-top" class="page-scroll"><i id = "icon-up" class="fa fa-chevron-up" aria-hidden="true"></i></a>
@@ -34,8 +48,7 @@
         
         <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
         {% if site.keybase-in-footer %}
-        <p style="font-size: 16px;"><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i
-                class="fa fa-key"></i> {{site.keybase-username}} on Keybase</a></p>
+        <p id="footer-text">made with jekyll 💙 and hosted on GitHub</p>
         {% endif %}
     </div>
     
